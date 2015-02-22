@@ -4,6 +4,7 @@
 TestAccountNumberValidator('String Validator', new AccountNumberValidator());
 TestAccountNumberValidator('Math Validator', new EfficientAccountNumberValidator());
 
+// ReSharper disable once InconsistentNaming
 function TestAccountNumberValidator(name: string, validator: IAccountNumberValidator) {
 	describe(name, () => {
 		describe('is invalid if passed', () => {
